@@ -10,12 +10,13 @@ class PinsController < ApplicationController
 
 	def new
 
-		@pin = Pin.new
+		#@pin = Pin.new/no longer necessary since we now have users
+		@pin = current_user.pins.build
 	end
 
 	def create
 
-	@pin = Pin.new(pin_params)
+	@pin = current_user.pins.build(pin_params)
 
 		if @pin.save
 			redirect_to @pin, notice: "Successfully created new Pin"
