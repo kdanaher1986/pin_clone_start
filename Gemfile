@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'jquery-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.3'
@@ -44,6 +45,8 @@ gem 'simple_form', '~> 3.5'
 gem 'devise', '~> 4.3'
 #upload pics for pins
 gem 'paperclip', '~> 5.1'
+#layout gem
+gem 'masonry-rails', '~> 0.2.4'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
