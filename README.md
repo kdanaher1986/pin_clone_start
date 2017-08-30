@@ -5,6 +5,12 @@ application up and running.
 
 Things you may want to cover:
 
+If you don't have the latest version already, be sure to have the latest version of Ruby 2.4.1. You can install this by going to rubygems.org and search for this or latest versions, or install through your terminal
+
+```
+gem install ruby
+```
+
 * Ruby version
 
 * System dependencies
